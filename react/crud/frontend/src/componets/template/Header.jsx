@@ -2,6 +2,9 @@ import './Header.css'
 import React from 'react'
 
 export default props => 
-    <header className="header">
-        Cabecalho
+    <header className="header d-nome d-sm-flex flex-column">
+        <h1 className="mt-3">
+            <i className={`fa fa-${props.icon}`}></i> {props.title}
+        </h1>
+<p className="lead tex-muted">{props.subtitle}</p>
     </header>
